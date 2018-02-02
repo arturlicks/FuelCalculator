@@ -3,17 +3,21 @@
     <table class="table table-striped table-responsive table-bordered">
         <thead>
             <tr>
-                <th>Alcool</th>
-                <th>DTClean</th>
-                <th>Octapro</th>
+                <th>Tipo</th>
+                <th>Preco</th>
+                <th>Rendimento</th>
+                <th>% Rendimento</th>
+                <th>% Preco</th>
             </tr>
         </thead>
         <tbody>
-        {% for jogo in jogos %}
+        {% for combustivel in combustiveis %}
                         <tr>
-                            <td>{{ jogo.nome }}</td>
-                            <td>{{ jogo.categoria }}</td>
-                            <td>{{ jogo.console }}</td>
+                            <td>{{ combustivel.tipo }}</td>
+                            <td>{{ combustivel.preco }}</td>
+                            <td>{{ combustivel.rendimento }}</td>
+                            <td>{{ combustivel.prendimento }}</td>
+                            <td>{{ combustivel.ppreco }}</td>
                         </tr>
         {% endfor %}
         </tbody>
